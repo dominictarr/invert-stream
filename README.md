@@ -11,7 +11,7 @@ var A = invert()
 
 in_steam.pipe(A).pipe(out_stream)
 
-var B = A.b
+var B = A.other
 
 B.write(data_for_outstream)
 B.on('data', data_from_in_stream)
