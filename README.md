@@ -7,14 +7,12 @@ and `B.write(X) -> A.emit('data', X)`
 
 var invert = require('invert-stream')
 
-var A = invert()
+var inverted = invert()
 
-in_steam.pipe(A).pipe(out_stream)
+in_steam.pipe(inverted.other).pipe(out_stream)
 
-var B = A.other
-
-B.write(data_for_outstream)
-B.on('data', data_from_in_stream)
+inverted.write(data_for_outstream)
+inverted.on('data', data_from_in_stream)
 
 ## why ?
 
