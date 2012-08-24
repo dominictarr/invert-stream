@@ -27,7 +27,6 @@ test(function (a, b, mac) {
   a.end()
 })
 
-
 test(function (a, b, mac) {
   var data1 = Math.random()
   var data2 = Math.random()
@@ -56,7 +55,7 @@ test(function (a, b, mac) {
 
 test(function (a, b, mac) {
   var drain = mac().once()
-    , pause = mac().before(drain).once()
+  var pause = mac().before(drain).once()
 
   b.resume = mac(b.resume).before(drain)
   b.on('pause', pause)
@@ -65,6 +64,4 @@ test(function (a, b, mac) {
   assert.strictEqual(b.write(), false)
   a.resume()
 })
-
-
 
