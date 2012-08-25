@@ -7,9 +7,9 @@
     "url": "git://github.com/dominictarr/invert-stream.git"
   },
   "dependencies": {
-    "macgyver": "~1.8.0"
   },
   "devDependencies": {
+    "macgyver": "~1.8.0",
     "tap": "0.3.0"
   },
   "scripts": {
