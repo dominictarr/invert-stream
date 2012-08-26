@@ -1,5 +1,7 @@
 # invert-stream
 
+<img src=https://secure.travis-ci.org/dominictarr/invert-stream.png?branch=master>
+
 Create a pair of streams (A, B) such that `A.write(X) -> B.emit('data', X)`
 and `B.write(X) -> A.emit('data', X)`
 
