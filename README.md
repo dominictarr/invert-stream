@@ -16,6 +16,8 @@ in_steam.pipe(inverted.other).pipe(out_stream)
 inverted.write(data_for_outstream)
 inverted.on('data', data_from_in_stream)
 
+```
+
 ## why ?
 
 this is useful for a couple of things.
